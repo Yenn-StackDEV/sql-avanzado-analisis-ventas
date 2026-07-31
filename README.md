@@ -75,3 +75,24 @@ Cinco reportes impresos en consola: ranking de vendedores por región, media mó
 ## Razonamiento de negocio
 
 Cada consulta está documentada con más detalle, incluyendo por qué se eligió esa función de ventana en particular y qué decisión de negocio ayuda a tomar, en [`docs/notas_de_negocio.md`](docs/notas_de_negocio.md).
+
+
+---
+
+## Resultado real (capturas de ejecucion)
+
+Estas capturas muestran el resultado real de ejecutar las consultas en la base de datos ficticia del proyecto (via Python y sqlite3), confirmando que la logica documentada arriba funciona correctamente de principio a fin.
+
+Consulta 1, ranking de vendedores por region:
+
+![Resultado consulta 1](resultado-consulta1-ranking-vendedores.png)
+
+Consulta 3, participacion porcentual de cada producto en el total de ventas:
+
+![Resultado consulta 3](resultado-consulta3-participacion-productos.png)
+
+Consulta 5, top 2 productos mas vendidos por categoria:
+
+![Resultado consulta 5](resultado-consulta5-top-productos-categoria.png)
+
+Las consultas 2 y 4 (media movil mensual y crecimiento mes a mes) tambien se ejecutaron y verificaron correctamente; su detalle completo puede reproducirse siguiendo los pasos de la seccion "Como ejecutarlo".
